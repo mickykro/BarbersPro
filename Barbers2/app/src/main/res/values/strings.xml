@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Barbers</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="gender">
+        <item name="male" type="string">Male</item>
+        <item name="female" type="string">Female</item>
+    </string-array>
+    <string name="appwidget_text">Me Hair</string>
+    <string name="add_widget">Add widget</string>
+    <string name="mehair">MeHair</string>
+    <string name="mehair1">Mehair</string>
+</resources>

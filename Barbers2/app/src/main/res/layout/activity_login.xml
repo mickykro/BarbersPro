@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_entry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"
+    android:background="@drawable/img">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+        <TextView
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="25dp"
+            android:textColor="#54abee"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45dp"
+            />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_update_name"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Already have an account?"
+            android:textColor="#c4c5c9"
+            android:textSize="16dp" />
+        <LinearLayout
+            android:id="@+id/circle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circleangle"
+            android:padding="16dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="140dp"
+            >
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/angle2"
+                    />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bag"
+                    android:paddingLeft="3dp"
+                    android:layout_gravity="center"
+                    />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/signupforfree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up For Free"
+                android:textSize="22dp"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@drawable/register_form" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView8"-->
+<!--        android:layout_width="360dp"-->
+<!--        android:layout_height="157dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:scaleType="fitXY"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:srcCompat="@drawable/barber_tools" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView11"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="52dp"-->
+
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline7"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/guideline8"-->
+<!--        app:srcCompat="@drawable/mail_icon" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="0.1" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline8"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintGuide_percent="0.09" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_mail"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="24dp"-->
+<!--        android:layout_marginEnd="24dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Email Addrress"-->
+<!--        android:textColorHint="#ffff"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:backgroundTint="#ffff"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageView11"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/imageView11"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/imageView11" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_userName"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:backgroundTint="#ffff"-->
+<!--        android:ems="10"-->
+<!--        android:hint="User Name"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:textColorHint="#ffff"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/et_mail"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/et_mail"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/et_mail" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/et_phone"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:backgroundTint="#ffff"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Phone"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:textColorHint="#ffff"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/et_userName"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/et_userName"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/et_userName" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/b_register"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="register"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/et_phone"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/guideline7"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/et_phone" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_login_sentence"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="if you already have an acount please login"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/et_phone"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/imageView11"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/b_register" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/b_login"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="login"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/tv_login_sentence"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tv_login_sentence" />-->
+
+<!--    <Spinner-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+
+
+    <![CDATA[
+
+    />
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

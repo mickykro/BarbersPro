@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/blankFragment">
+
+    <fragment
+        android:id="@+id/barberHomeFragment"
+        android:name="com.example.barbers.fragments.BarberHomeFragment"
+        android:label="fragment_barber_home"
+        tools:layout="@layout/fragment_barber_home" >
+        <action
+            android:id="@+id/action_barberHomeFragment_to_queuesFragment"
+            app:destination="@id/queuesFragment" />
+        <action
+            android:id="@+id/action_barberHomeFragment_to_detailUpdate"
+            app:destination="@id/detailUpdate" />
+    </fragment>
+    <fragment
+        android:id="@+id/costumerHomeFragment"
+        android:name="com.example.barbers.fragments.CostumerHomeFragment"
+        android:label="fragment_costumer_home"
+        tools:layout="@layout/fragment_costumer_home" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/barberAppointmentsFragment"
+        android:name="com.example.barbers.fragments.BarberAppointmentsFragment"
+        android:label="fragment_barber_appointments"
+        tools:layout="@layout/fragment_barber_appointments" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.barbers.fragments.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_barberHomeFragment"
+            app:destination="@id/barberHomeFragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_costumerHomeFragment"
+            app:destination="@id/costumerHomeFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.barbers.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.barbers.fragments.SignUp"
+        android:label="activity_signup"
+        tools:layout="@layout/activity_signup" >
+        <action
+            android:id="@+id/action_signUp_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/queuesFragment"
+        android:name="com.example.barbers.fragments.QueuesFragment"
+        android:label="fragment_queues"
+        tools:layout="@layout/fragment_queues" >
+        <action
+            android:id="@+id/action_queuesFragment_to_barberHomeFragment"
+            app:destination="@id/barberHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailUpdate"
+        android:name="com.example.barbers.fragments.DetailUpdate"
+        android:label="detail_update_fragment"
+        tools:layout="@layout/detail_update_fragment" />
+
+
+</navigation>
